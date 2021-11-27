@@ -58,13 +58,21 @@
 			children = (
 				1EA76F3A275221DE001E6B98 /* AppDelegate.swift */,
 				1EA76F3C275221DE001E6B98 /* SceneDelegate.swift */,
-				1EA76F3E275221DE001E6B98 /* ViewController.swift */,
+				1EA76F4E2752298F001E6B98 /* FirstScreen */,
 				1EA76F40275221DE001E6B98 /* Main.storyboard */,
 				1EA76F43275221FC001E6B98 /* Assets.xcassets */,
 				1EA76F45275221FC001E6B98 /* LaunchScreen.storyboard */,
 				1EA76F48275221FC001E6B98 /* Info.plist */,
 			);
 			path = Practice27112021;
+			sourceTree = "<group>";
+		};
+		1EA76F4E2752298F001E6B98 /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1EA76F3E275221DE001E6B98 /* ViewController.swift */,
+			);
+			path = FirstScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
