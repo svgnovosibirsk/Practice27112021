@@ -10,9 +10,7 @@ import UIKit
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var numberTxtFld: UITextField!
-    
     @IBOutlet weak var codeTxtFld: UITextField!
-    
     @IBOutlet weak var loginBtn: UIButton!
     
     override func viewDidLoad() {

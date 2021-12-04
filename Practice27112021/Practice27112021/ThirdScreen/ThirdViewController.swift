@@ -10,6 +10,7 @@ import UIKit
 class ThirdViewController: UIViewController {
     
     let city = City.cities
+    var index = 0
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,6 +21,14 @@ class ThirdViewController: UIViewController {
     
     @IBAction func logOutBtnPressed(_ sender: UIButton) {
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toForthVC" {
+            let detailVC = segue.destination as? ForthViewController
+            let item = city[index]
+            detailVC?.city = item
+        }
     }
 }
 
@@ -41,17 +50,15 @@ extension ThirdViewController: UITableViewDataSource {
         
         return  cell
     }
-
 }
 
 extension ThirdViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = ForthViewController()
         let item = city[indexPath.row]
-        detailVC.imageView.image = UIImage(named: item.image)
-        detailVC.titleField.text = item.name
-        detailVC.textView.text = item.description
-        self.navigationController?.pushViewController(detailVC, animated: true)
+        detailVC.city = item
+        index = indexPath.row
+        performSegue(withIdentifier: "toForthVC", sender: nil)
     }
 }
 

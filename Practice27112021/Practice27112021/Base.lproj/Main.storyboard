@@ -174,6 +174,7 @@
                     <navigationItem key="navigationItem" id="cS0-fC-cFz"/>
                     <connections>
                         <outlet property="tableView" destination="j3H-ga-bSO" id="kmI-ii-wpM"/>
+                        <segue destination="dqj-Xz-up9" kind="show" identifier="toForthVC" id="Rsl-Lc-e9y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9fQ-wP-PHo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -190,19 +191,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NPs-kb-v8k">
-                                <rect key="frame" x="20" y="54" width="374" height="250"/>
+                                <rect key="frame" x="20" y="98" width="374" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="Kdz-PD-z6a"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LpZ-YR-22x">
-                                <rect key="frame" x="20" y="324" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="368" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zck-Il-gEg">
-                                <rect key="frame" x="20" y="364.5" width="374" height="517.5"/>
+                                <rect key="frame" x="20" y="408.5" width="374" height="473.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -225,6 +226,7 @@
                             <constraint firstItem="NPs-kb-v8k" firstAttribute="top" secondItem="FHm-TH-qPc" secondAttribute="top" constant="10" id="r2C-8O-oot"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FE3-X5-Nfm"/>
                     <connections>
                         <outlet property="imageView" destination="NPs-kb-v8k" id="bmq-HF-6oe"/>
                         <outlet property="textView" destination="zck-Il-gEg" id="6uk-C5-IOG"/>
