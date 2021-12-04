@@ -16,6 +16,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideCodeTxtAndLoginBtn()
+        configButtons()
     }
     
     @IBAction func getAuthBtnPressed(_ sender: UIButton) {
@@ -44,5 +45,14 @@ class SecondViewController: UIViewController {
     private func showCodeTxtAndLoginBtn() {
         codeTxtFld.isHidden = false
         loginBtn.isHidden = false
+    }
+    
+    private func configButtons() {
+        loginBtn.layer.cornerRadius = 10
+    }
+    
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+        numberTxtFld.text = ""
+        codeTxtFld.text = ""
     }
 }

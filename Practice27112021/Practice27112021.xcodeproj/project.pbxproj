@@ -70,11 +70,11 @@
 				1EA76F542752342C001E6B98 /* ThirdScreen */,
 				1EA76F5127523219001E6B98 /* SecondScreen */,
 				1EA76F4E2752298F001E6B98 /* FirstScreen */,
+				1EFE4920275B79D4005E8AA0 /* Model */,
 				1EA76F40275221DE001E6B98 /* Main.storyboard */,
 				1EA76F43275221FC001E6B98 /* Assets.xcassets */,
 				1EA76F45275221FC001E6B98 /* LaunchScreen.storyboard */,
 				1EA76F48275221FC001E6B98 /* Info.plist */,
-				1EA76F5827523D94001E6B98 /* Model.swift */,
 			);
 			path = Practice27112021;
 			sourceTree = "<group>";
@@ -109,6 +109,14 @@
 				1EA76F55275234BB001E6B98 /* ForthViewController.swift */,
 			);
 			path = ForthScreen;
+			sourceTree = "<group>";
+		};
+		1EFE4920275B79D4005E8AA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EA76F5827523D94001E6B98 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
